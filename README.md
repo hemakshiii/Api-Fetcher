@@ -23,20 +23,20 @@ To Fetch API using NLP
 3. The fetched data will be displayed on the web page in JSON format. (after clicking button wait for sometime to load the data scroll down the data will be sucessfully extracted)
 
 
-###Note:
+## Note:
 There are two app.py and app1.py files, one is by using NLP and another one is without using both are working well.
 
-##How it Works:
-1.Flask Application:
-The Flask application (app.py) serves the HTML page and handles API requests.
-It includes a route to render the main HTML page (index.html) and a route (/fetch_data) to fetch data from the external API.
-The main_request function retrieves data from the API.
-The get_total_pages function calculates the total number of pages based on the API response.
-The parse_json function parses the API response, extracts relevant data, and performs sentiment analysis using the analyze_sentiment function.
+## How it works:
+## Flask Application:
+1.The Flask application (app.py) serves the HTML page and handles API requests.
+2.It includes a route to render the main HTML page (index.html) and a route (/fetch_data) to fetch data from the external API.
+3.The main_request function retrieves data from the API.
+4.The get_total_pages function calculates the total number of pages based on the API response.
+5.The parse_json function parses the API response, extracts relevant data, and performs sentiment analysis using the analyze_sentiment function.
 
-2.HTML Template:
-The HTML file (index.html) includes a button to fetch data and a section to display the fetched data.
-The jQuery script in the HTML file makes an AJAX request to the /fetch_data endpoint when the button is clicked, and displays the JSON response on the page.
+## HTML Template:
+1.The HTML file (index.html) includes a button to fetch data and a section to display the fetched data.
+2.The jQuery script in the HTML file makes an AJAX request to the /fetch_data endpoint when the button is clicked, and displays the JSON response on the page.
 
-3.CSS Styling:
-The CSS file (style.css) provides styling for the HTML elements, including the container, button, and background.
+## CSS Styling:
+1.The CSS file (style.css) provides styling for the HTML elements, including the container, button, and background.
