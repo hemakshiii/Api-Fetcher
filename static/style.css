@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(dark.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px; 
+    color: #d7cccc;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    background-color: rgb(39, 166, 39);
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    font-size: 18px; 
+    font-family: 'Arial', sans-serif; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: rgb(30, 130, 30); /* Darken button color on hover */
+}
+
+body{
+    /* background-color: rgb(224, 109, 224); */
+    background-color: rgb(223, 174, 223);
+}

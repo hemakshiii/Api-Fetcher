@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fetcher</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>API Data Fetcher</h1>
+            <button id="fetchButton" class="btn">Fetch Data</button>
+        </div>
+        <pre id="output"></pre>
+    <script>
+        $(document).ready(function() {
+            $('#fetchButton').click(function() {
+                $.get('/fetch_data', function(data) {
+                    $('#output').text(JSON.stringify(data, null, 4));
+                });
+            });
+        });
+    </script>
+    
+    
+    
+</body>
+</html>
+
